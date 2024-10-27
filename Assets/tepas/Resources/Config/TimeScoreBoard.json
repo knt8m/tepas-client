@@ -1,0 +1,79 @@
+{
+  "timeScores": [
+    {
+      "startTime": 0,
+      "endTime": 20,
+      "score": 1200
+    },
+    {
+      "startTime": 21,
+      "endTime": 40,
+      "score": 1100
+    },
+    {
+      "startTime": 41,
+      "endTime": 60,
+      "score": 1000
+    },
+    {
+      "startTime": 61,
+      "endTime": 90,
+      "score": 800
+    },
+    {
+      "startTime": 91,
+      "endTime": 120,
+      "score": 600
+    },
+    {
+      "startTime": 121,
+      "endTime": 180,
+      "score": 400
+    },
+    {
+      "startTime": 181,
+      "endTime": 240,
+      "score": 350
+    },
+    {
+      "startTime": 241,
+      "endTime": 320,
+      "score": 300
+    },
+    {
+      "startTime": 321,
+      "endTime": 440,
+      "score": 250
+    },
+    {
+      "startTime": 441,
+      "endTime": 560,
+      "score": 200
+    },
+    {
+      "startTime": 561,
+      "endTime": 680,
+      "score": 180
+    },
+    {
+      "startTime": 681,
+      "endTime": 920,
+      "score": 160
+    },
+    {
+      "startTime": 921,
+      "endTime": 1160,
+      "score": 140
+    },
+    {
+      "startTime": 1161,
+      "endTime": 2000,
+      "score": 120
+    },
+    {
+      "startTime": 2001,
+      "endTime": 99999,
+      "score": 100
+    }
+  ]
+}

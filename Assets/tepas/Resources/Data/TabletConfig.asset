@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf133c782465294eb892afbd1a40db1, type: 3}
+  m_Name: TabletConfig
+  m_EditorClassIdentifier: 
+  Version: 1.0.1
+  imageMaps:
+  - state: 0
+    image: {fileID: 21300000, guid: 24a87247894f5414c875e1454c2edf6a, type: 3}
+  - state: 1
+    image: {fileID: 21300000, guid: f465dc313ea8cbc44bd9653d7b3680b2, type: 3}
+  - state: 2
+    image: {fileID: 21300000, guid: d3933d9af724dcb47a8daf2583fd25e0, type: 3}
+  - state: 3
+    image: {fileID: 21300000, guid: 5e3c5d964a3da094a9e8f801cc12a803, type: 3}
+  - state: 4
+    image: {fileID: 21300000, guid: 2937b63944daf8a44959437ce0e53364, type: 3}
