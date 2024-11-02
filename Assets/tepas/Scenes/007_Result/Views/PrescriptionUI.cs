@@ -23,12 +23,14 @@ public class PrescriptionUI : MonoBehaviour
 
     void Start()
     {
-        GameObject scoreObj = GameObject.Find("ScoreModel");
-        scoreModel = scoreObj.GetComponent<ScoreModel>();
+        scoreModel = GameObject.Find("GameManager").GetComponent<GameManager>().scoreModel;
         timeTxt.text = scoreModel.GetTime();
         tabletTotalTxt.text = Convert.ToString(scoreModel.tabletTotal);
         missCountTxt.text = Convert.ToString(scoreModel.missCount);
-        totalScoreTxt.text = Convert.ToString(scoreModel.tabletTotal);
     }
 
+    void Update()
+    {
+        totalScoreTxt.text = Convert.ToString(scoreModel.totalScore);
+    }
 }

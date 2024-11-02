@@ -29,7 +29,7 @@ public class TabletUI : MonoBehaviour, IPointerClickHandler
     public void Init()
     {
         tabletConfig = Resources.Load<TabletConfig>(tabletConfigPath);
-        scoreModel = GameObject.Find("ScoreModel").GetComponent<ScoreModel>();
+        scoreModel = GameObject.Find("GameManager").GetComponent<GameManager>().scoreModel;
     }
 
 

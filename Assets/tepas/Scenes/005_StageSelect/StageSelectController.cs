@@ -14,6 +14,7 @@ public class StageSelectController : MonoBehaviour
     public void onStageButton(int stageNo)
     {
         this.stageNo = stageNo;
-        Scenes.LoadSceneAsync("006_Puzzle", LoadSceneMode.Additive);
+        GameObject.Find("GameManager").GetComponent<GameManager>().stageNo = stageNo;
+        Scenes.LoadSceneAsync("006_Puzzle");
     }
 }

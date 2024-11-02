@@ -25,11 +25,11 @@ public class PuzzleController : MonoBehaviour
 
     void Start()
     {
-        //DontDestroyOnLoad(scoreModel);
         int stageNo = 1;
-        //ステージ読込
+        stageNo = GameObject.Find("GameManager").GetComponent<GameManager>().stageNo;
         stageLoader.LoadStageData(stageNo);
         stage = stageLoader.GetStageData();
+        this.scoreModel = GameObject.Find("GameManager").GetComponent<GameManager>().scoreModel;
         scoreModel.Default(stage.Remain, 0);
     }
 
@@ -44,10 +44,12 @@ public class PuzzleController : MonoBehaviour
             scoreModel.SetTime(3599);
         }
         //終了条件
-        if (scoreModel.tabletTotal <= 0)
+        if (scoreModel.tabletRemain <= 0)
         {
+
+
             isResultScene = true;
-            Scenes.LoadSceneAsync("007_Result", LoadSceneMode.Additive);
+            Scenes.LoadSceneAsync("007_Result");
         }
     }
 

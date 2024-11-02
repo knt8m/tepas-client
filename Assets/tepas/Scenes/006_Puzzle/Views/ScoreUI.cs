@@ -8,8 +8,8 @@ public class ScoreUI : MonoBehaviour
     [BoxGroup("スコア"), LabelText("経過時間"), Required]
     public TextMeshProUGUI timerText; 
 
-    [BoxGroup("スコア"), LabelText("正解タブレット数"), Required]
-    public TextMeshProUGUI tabletTotalText;
+    [BoxGroup("スコア"), LabelText("正解タブレット残数"), Required]
+    public TextMeshProUGUI tabletRemainText;
 
     [BoxGroup("スコア"), LabelText("ミス数"), Required]
     public TextMeshProUGUI missCountText; //
@@ -23,22 +23,13 @@ public class ScoreUI : MonoBehaviour
 
     void Start()
     {
-        GameObject scoreObj = GameObject.Find("ScoreModel");
-        scoreModel = scoreObj.GetComponent<ScoreModel>();
+        scoreModel = GameObject.Find("GameManager").GetComponent<GameManager>().scoreModel;
     }
 
     void Update()
     {
         timerText.text = scoreModel.GetTime();
-        tabletTotalText.text = Convert.ToString(scoreModel.tabletTotal);
+        tabletRemainText.text = Convert.ToString(scoreModel.tabletRemain);
         missCountText.text = Convert.ToString(scoreModel.missCount);
-        /*
-        time += Time.deltaTime;
-        if (time >= interval)
-        {
-            time = 0f;
-            Draw();
-        }
-        */
     }
 }

@@ -8,7 +8,10 @@ public class ScoreModel : MonoBehaviour
     public static ScoreModel instance;
     public float timer;
     public int tabletTotal;
+    public int tabletRemain;
     public int missCount;
+    public int totalScore;
+    public string totalScoreProcess;
 
     void Awake()
     {
@@ -36,19 +39,26 @@ public class ScoreModel : MonoBehaviour
     {
         timer = 0f;
         tabletTotal = 0;
+        tabletRemain = 0;
         missCount = 0;
     }
 
     public void Default(int tabletTotal = 0, int missCount = 0)
     {
         this.tabletTotal = tabletTotal;
+        this.tabletRemain = tabletTotal;
         this.missCount = missCount;
     }
     public void SetTime(float time = 0f)
     {
         this.timer = time;
     }
-     
+
+    public void SetTotalScore(int totalScore = 0)
+    {
+        this.totalScore = totalScore;
+    }
+
     public string GetTime()
     {
         return string.Format("{0:D2}:{1:D2}",
@@ -63,6 +73,6 @@ public class ScoreModel : MonoBehaviour
 
     public void Correct()
     {
-        --this.tabletTotal;
+        --this.tabletRemain;
     }
 }

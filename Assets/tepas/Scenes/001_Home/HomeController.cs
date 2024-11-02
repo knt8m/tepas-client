@@ -6,6 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class HomeController : MonoBehaviour
 {
+    void Start()
+    {
+        //GameObject.Find("ScoreModel").GetComponent<ScoreModel>();
+        //GameObject.Find("GameManager").GetComponent<GameManager>().scoreModel = GameObject.Find("ScoreModel").GetComponent<ScoreModel>();
+    }
     public void OnNewGameButton()
     {
         Scenes.LoadSceneAsync("005_StageSelect");

@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
+    public static GameManager Instance { get; set; }
 
-    public int stegeNo;
+
+    public ScoreModel scoreModel;
+    public int stageNo { get; internal set; }
 
     private void Awake()
     {
