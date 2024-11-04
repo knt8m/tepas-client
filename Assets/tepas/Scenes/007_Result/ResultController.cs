@@ -2,6 +2,7 @@ using UnityEngine;
 using AnnulusGames.SceneSystem;
 using UnityEngine.SceneManagement;
 using System;
+using System.Text.Json;
 
 public class ResultController : MonoBehaviour
 {
@@ -22,7 +23,8 @@ public class ResultController : MonoBehaviour
         TimeScoreBoard timeScoreBoard = timeScoreLoader.Load();
         timeScoreBoard.Show();
         ScoreModel scoreModel;
-        scoreModel = GameObject.Find("GameManager").GetComponent<GameManager>().scoreModel;
+        GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        scoreModel = gameManager.scoreModel;
         float time = scoreModel.timer;
         int tablet = scoreModel.tabletTotal;
         int miss = scoreModel.missCount;
@@ -55,7 +57,10 @@ public class ResultController : MonoBehaviour
         tabletPoint = tablet * 50;
         score = timePoint + tabletPoint + missPoint;
         scoreModel.SetTotalScore(score);
-        scoreModel.totalScoreProcess = score + " = time:" + timePoint + " + "  + "tablet:" + tabletPoint + " + " + "miss:" + missPoint;
+        scoreModel.totalScoreProcess = score + " = time:" + timePoint + " + " + "tablet:" + tabletPoint + " + " + "miss:" + missPoint;
+        gameManager.UpdateClearStage(gameManager.stageNo, score);
+        gameManager.SaveGameData();
+        Debug.Log(JsonUtility.ToJson(gameManager.gameData));
     }
 
     public void onRetryButton()

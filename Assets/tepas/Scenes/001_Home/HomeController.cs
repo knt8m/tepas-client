@@ -13,6 +13,8 @@ public class HomeController : MonoBehaviour
     }
     public void OnNewGameButton()
     {
+        //GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        //gameManager.LoadGameData();
         Scenes.LoadSceneAsync("005_StageSelect");
     }
 
