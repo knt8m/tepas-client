@@ -76,3 +76,4 @@ crashlytics-build.properties
 /[Aa]ssets/Plugins/Sirenix*
 /[Aa]ssets/Plugins
 /[Aa]ssets/feature
+/diff.txt

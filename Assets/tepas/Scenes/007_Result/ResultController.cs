@@ -60,7 +60,7 @@ public class ResultController : MonoBehaviour
         scoreModel.totalScoreProcess = score + " = time:" + timePoint + " + " + "tablet:" + tabletPoint + " + " + "miss:" + missPoint;
         gameManager.UpdateClearStage(gameManager.stageNo, score);
         gameManager.SaveGameData();
-        Debug.Log(JsonUtility.ToJson(gameManager.gameData));
+        //Debug.Log(JsonUtility.ToJson(gameManager.gameData));
     }
 
     public void onRetryButton()

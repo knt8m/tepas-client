@@ -20,7 +20,7 @@ public class LoadController : MonoBehaviour
     public void onLoadButton(int dataNo)
     {
         GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        gameManager.nowDataNo = 2;
+        gameManager.nowDataNo = dataNo;
         Scenes.LoadSceneAsync("005_StageSelect");
     }
 
@@ -36,8 +36,10 @@ public class LoadController : MonoBehaviour
         gameManager.LoadGameData();
         //データ1
         int index = 1;
+        bool isSaveData = false;
         foreach (ClearStage stage in gameManager.gameData.saveStageData1)
         {
+            isSaveData = true;
             if (stage.stageNo != index)
             {
                 break;
@@ -47,21 +49,23 @@ public class LoadController : MonoBehaviour
         int data1maxStage = index - 1;
         GameObject NoData = GameObject.Find("/Canvas/Data1/NoData").gameObject;
         GameObject SaveData = GameObject.Find("/Canvas/Data1/SaveData").gameObject;
-        if (data1maxStage <= 0)
-        {
-            SaveData.SetActive(false);
-            NoData.SetActive(true);
-        }
-        else
+        if (isSaveData)
         {
             SaveData.SetActive(true);
             NoData.SetActive(false);
         }
+        else
+        {
+            SaveData.SetActive(false);
+            NoData.SetActive(true);
+        }
 
         //データ2
         index = 1;
+        isSaveData = false;
         foreach (ClearStage stage in gameManager.gameData.saveStageData2)
         {
+            isSaveData = true;
             if (stage.stageNo != index)
             {
                 break;
@@ -71,21 +75,23 @@ public class LoadController : MonoBehaviour
         int data2maxStage = index - 1;
         NoData = GameObject.Find("/Canvas/Data2/NoData").gameObject;
         SaveData = GameObject.Find("/Canvas/Data2/SaveData").gameObject;
-        if (data2maxStage <= 0)
-        {
-            SaveData.SetActive(false);
-            NoData.SetActive(true);
-        }
-        else
+        if (isSaveData)
         {
             SaveData.SetActive(true);
             NoData.SetActive(false);
         }
+        else
+        {
+            SaveData.SetActive(false);
+            NoData.SetActive(true);
+        }
 
         //データ3
         index = 1;
+        isSaveData = false;
         foreach (ClearStage stage in gameManager.gameData.saveStageData3)
         {
+            isSaveData = true;
             if (stage.stageNo != index)
             {
                 break;
@@ -95,15 +101,15 @@ public class LoadController : MonoBehaviour
         int data3maxStage = index - 1;
         NoData = GameObject.Find("/Canvas/Data3/NoData").gameObject;
         SaveData = GameObject.Find("/Canvas/Data3/SaveData").gameObject;
-        if (data3maxStage <= 0)
-        {
-            SaveData.SetActive(false);
-            NoData.SetActive(true);
-        }
-        else
+        if (isSaveData)
         {
             SaveData.SetActive(true);
             NoData.SetActive(false);
+        }
+        else
+        {
+            SaveData.SetActive(false);
+            NoData.SetActive(true);
         }
 
         //モデルデータ登録処理

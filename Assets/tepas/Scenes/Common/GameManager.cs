@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            gameData = new GameData();
             DontDestroyOnLoad(gameObject);
             LoadGameData();
         }
@@ -37,6 +38,7 @@ public class GameManager : MonoBehaviour
             gameData = ES3.Load<GameData>("gameData");
         }
     }
+
 
     public void SaveGameData()
     {

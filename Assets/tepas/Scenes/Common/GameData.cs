@@ -19,8 +19,10 @@ public class GameData
     public string data3SavedDate;
 
     //İ’èî•ñ
-    public int bgmVolume;
-    public int seVolume;
+    public float bgmVolume;
+    public bool bgmMute;
+    public float seVolume;
+    public bool seMute;
     public string mouseLeftClick;
 
     public GameData()
@@ -28,5 +30,11 @@ public class GameData
         saveStageData1 = new List<ClearStage>();
         saveStageData2 = new List<ClearStage>();
         saveStageData3 = new List<ClearStage>();
+
+        bgmVolume = 0.6f;
+        bgmMute = false;
+        seVolume = 0.6f;
+        bgmMute = false;
+        mouseLeftClick = "blue_tablet";
     }
 }

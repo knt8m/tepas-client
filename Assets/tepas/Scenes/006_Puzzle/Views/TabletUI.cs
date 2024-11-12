@@ -20,6 +20,7 @@ public class TabletUI : MonoBehaviour, IPointerClickHandler
     private string tabletConfigPath = "Data/TabletConfig";
 
     private ScoreModel scoreModel;
+    private GameManager gameManager;
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class TabletUI : MonoBehaviour, IPointerClickHandler
     {
         tabletConfig = Resources.Load<TabletConfig>(tabletConfigPath);
         scoreModel = GameObject.Find("GameManager").GetComponent<GameManager>().scoreModel;
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
 
@@ -81,14 +83,28 @@ public class TabletUI : MonoBehaviour, IPointerClickHandler
 
     }
 
+    private void AnswerState()
+    {
+
+    }
+
+    
+
     public void OnPointerClick(PointerEventData pointerEventData)
     {
         TabletState selectAnswerState;
         switch (pointerEventData.button)
         {
             case PointerEventData.InputButton.Left:
-                selectAnswerState = TabletState.Dose;
-                if(currentState == TabletState.Unknown)
+                if (gameManager.gameData.mouseLeftClick == "black_tablet")
+                {
+                    selectAnswerState = TabletState.Hint;
+                }
+                else
+                {
+                    selectAnswerState = TabletState.Dose;
+                }
+                if (currentState == TabletState.Unknown)
                 {
                     if (selectAnswerState == answerState)
                     {
@@ -108,7 +124,14 @@ public class TabletUI : MonoBehaviour, IPointerClickHandler
                 }
                 break;
             case PointerEventData.InputButton.Right:
-                selectAnswerState = TabletState.Hint;
+                if (gameManager.gameData.mouseLeftClick == "black_tablet")
+                {
+                    selectAnswerState = TabletState.Dose;
+                }
+                else
+                {
+                    selectAnswerState = TabletState.Hint;
+                }
                 if (currentState == TabletState.Unknown)
                 {
                     if (selectAnswerState == answerState)
