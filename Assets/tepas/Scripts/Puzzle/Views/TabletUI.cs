@@ -22,8 +22,11 @@ public class TabletUI : MonoBehaviour, IPointerClickHandler
     private ScoreModel scoreModel;
     private GameManager gameManager;
 
+    SoundManager soundManager;
+
     void Start()
     {
+        
         Init();
     }
 
@@ -32,6 +35,7 @@ public class TabletUI : MonoBehaviour, IPointerClickHandler
         tabletConfig = Resources.Load<TabletConfig>(tabletConfigPath);
         scoreModel = GameObject.Find("GameManager").GetComponent<GameManager>().scoreModel;
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
 
 
@@ -108,6 +112,15 @@ public class TabletUI : MonoBehaviour, IPointerClickHandler
                 {
                     if (selectAnswerState == answerState)
                     {
+                        if (answerState == TabletState.Dose)
+                        {
+                            soundManager.PlaySe("Select_01");
+                        }
+                        else if (answerState == TabletState.Hint)
+                        {
+                            soundManager.PlaySe("Select_03");
+                        }
+
                         currentState = answerState;
                         UpdateImage(answerState);
                         UpdateText(answerState);
@@ -115,6 +128,7 @@ public class TabletUI : MonoBehaviour, IPointerClickHandler
                     }
                     else
                     {
+                        soundManager.PlaySe("Pause_01");
                         scoreModel.Miss();
                     }
                 }
@@ -136,6 +150,14 @@ public class TabletUI : MonoBehaviour, IPointerClickHandler
                 {
                     if (selectAnswerState == answerState)
                     {
+                        if(answerState == TabletState.Dose)
+                        {
+                            soundManager.PlaySe("Select_01");
+                        }
+                        else if(answerState == TabletState.Hint)
+                        {
+                            soundManager.PlaySe("Select_03");
+                        }
                         currentState = answerState;
                         UpdateImage(answerState);
                         UpdateText(answerState);
@@ -143,6 +165,7 @@ public class TabletUI : MonoBehaviour, IPointerClickHandler
                     }
                     else
                     {
+                        soundManager.PlaySe("Pause_01");
                         scoreModel.Miss();
                     }
                 }

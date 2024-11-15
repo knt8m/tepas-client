@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
             gameData = new GameData();
             DontDestroyOnLoad(gameObject);
             LoadGameData();
+            InitOwnTrophy();
         }
         else
         {
@@ -39,11 +40,120 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
     public void SaveGameData()
     {
         ES3.Save("gameData", gameData);
     }
+
+    public void GetOwnTrophy()
+    {
+
+    }
+
+    public void InitOwnTrophy()
+    {
+        List<OwnTrophy> ownTrophies = gameData.ownTrophyData1;
+        OwnTrophy trophy = null;
+        if (ownTrophies == null || ownTrophies.Count == 0)
+        {
+            ownTrophies = new List<OwnTrophy>();
+            for (int i = 1; i < 46; i++)
+            {
+                trophy = new OwnTrophy();
+                trophy.trophyNo = i;
+                trophy.color = "none";
+                ownTrophies.Add(trophy);
+            }
+            gameData.ownTrophyData1 = ownTrophies;
+        }
+
+        ownTrophies = gameData.ownTrophyData2;
+        if (ownTrophies == null || ownTrophies.Count == 0)
+        {
+            ownTrophies = new List<OwnTrophy>();
+            for (int i = 1; i < 46; i++)
+            {
+                trophy = new OwnTrophy();
+                trophy.trophyNo = i;
+                trophy.color = "none";
+                ownTrophies.Add(trophy);
+            }
+            gameData.ownTrophyData2 = ownTrophies;
+        }
+
+        ownTrophies = gameData.ownTrophyData3;
+        if (ownTrophies == null || ownTrophies.Count == 0)
+        {
+            ownTrophies = new List<OwnTrophy>();
+            for (int i = 1; i < 46; i++)
+            {
+                trophy = new OwnTrophy();
+                trophy.trophyNo = i;
+                trophy.color = "none";
+                ownTrophies.Add(trophy);
+            }
+            gameData.ownTrophyData3 = ownTrophies;
+        }
+
+#if UNITY_EDITOR
+        foreach (OwnTrophy ownTrophy in ownTrophies)
+        {
+            Debug.Log("-----------------");
+            Debug.Log(ownTrophy.trophyNo);
+            Debug.Log(ownTrophy.color);
+        }
+#endif
+        SaveGameData();
+    }
+
+    public void UpdateOwnTrophy(int trophyNo, string color)
+    {
+        if(nowDataNo == 1)
+        {           
+            OwnTrophy trophyToUpdate = gameData.ownTrophyData1.FirstOrDefault(t => t.trophyNo == trophyNo);
+            if (trophyToUpdate != null)
+            {
+                trophyToUpdate.color = color;
+            }
+            else
+            {
+#if UNITY_EDITOR
+                Console.WriteLine($"Trophy {trophyNo} not found.");
+#endif
+            }
+        }
+        else if (nowDataNo == 2)
+        {
+            OwnTrophy trophyToUpdate = gameData.ownTrophyData2.FirstOrDefault(t => t.trophyNo == trophyNo);
+            if (trophyToUpdate != null)
+            {
+                trophyToUpdate.color = color;
+            }
+            else
+            {
+#if UNITY_EDITOR
+                Console.WriteLine($"Trophy {trophyNo} not found.");
+#endif
+            }
+        }
+        else if (nowDataNo == 3)
+        {
+            OwnTrophy trophyToUpdate = gameData.ownTrophyData3.FirstOrDefault(t => t.trophyNo == trophyNo);
+            if (trophyToUpdate != null)
+            {
+                trophyToUpdate.color = color;
+            }
+            else
+            {
+#if UNITY_EDITOR
+                Console.WriteLine($"Trophy {trophyNo} not found.");
+#endif
+            }
+        }
+
+
+    }
+
 
     private List<ClearStage> GetClearStages()
     {

@@ -17,6 +17,7 @@ public class SettingController : MonoBehaviour
 
     public void onBackButton()
     {
+        soundManager.PlaySe("Select_05");
         soundManager.SaveBgmVolume();
         soundManager.SaveBgmMute();
         soundManager.SaveSeVolume();

@@ -1,0 +1,28 @@
+{
+  "trophies": [
+    {
+      "no": 1,
+      "stage": 1,
+      "borderScore": 500,
+      "color": "blue"
+    },
+    {
+      "no": 2,
+      "stage": 1,
+      "borderScore": 1000,
+      "color": "blue"
+    },
+    {
+      "no": 3,
+      "stage": 1,
+      "borderScore": 1400,
+      "color": "red"
+    },
+    {
+      "no": 999,
+      "stage": 999,
+      "borderScore": 9999,
+      "color": "red"
+    }
+  ]
+}

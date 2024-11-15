@@ -3,6 +3,9 @@ using AnnulusGames.SceneSystem;
 using UnityEngine.SceneManagement;
 using System;
 using System.Text.Json;
+using System.Collections.Generic;
+using UnityEngine.UI;
+using System.Linq;
 
 public class ResultController : MonoBehaviour
 {
@@ -12,6 +15,19 @@ public class ResultController : MonoBehaviour
     [SerializeField]
     TimeScoreLoader timeScoreLoader;
 
+    [SerializeField]
+    TrophyLoader trophyLoader;
+
+    [SerializeField]
+    public Sprite trophyNoneImg;
+
+    [SerializeField]
+    public Sprite trophyBlueImg;
+
+    [SerializeField]
+    public Sprite trophyRedImg;
+
+
     public int score;
 
     public PrescriptionUI prescriptionUi;
@@ -19,9 +35,11 @@ public class ResultController : MonoBehaviour
     void Start()
     {
         MissScoreBoard missScoreBoard = missScoreLoader.Load();
-        missScoreBoard.Show();
+        //missScoreBoard.Show();
         TimeScoreBoard timeScoreBoard = timeScoreLoader.Load();
-        timeScoreBoard.Show();
+        //timeScoreBoard.Show();
+        TrophyBoard trophyBoard = trophyLoader.Load();
+        trophyBoard.Show();
         ScoreModel scoreModel;
         GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         scoreModel = gameManager.scoreModel;
@@ -32,6 +50,9 @@ public class ResultController : MonoBehaviour
         int timePoint;
         int tabletPoint;
         int missPoint;
+        // トロフィー取得リスト
+        List<Trophy> trophyGetList = new List<Trophy>();
+
 
         //スコアボードに従った処理
         timePoint = 0;
@@ -59,6 +80,67 @@ public class ResultController : MonoBehaviour
         scoreModel.SetTotalScore(score);
         scoreModel.totalScoreProcess = score + " = time:" + timePoint + " + " + "tablet:" + tabletPoint + " + " + "miss:" + missPoint;
         gameManager.UpdateClearStage(gameManager.stageNo, score);
+
+
+        //トロフィー取得
+        foreach (Trophy trophy in trophyBoard.trophies)
+        {
+            if(gameManager.stageNo == trophy.stage)
+            {
+                if (trophy.borderScore <= score)
+                {
+                    trophyGetList.Add(trophy);
+                }
+            }
+        }
+        //昇順に並び替え
+        trophyGetList = trophyGetList.OrderBy(trophy => trophy.no).ToList();
+        //トロフィー設定
+        int index = 1;
+        Image trophy1 = GameObject.Find("Trophy1").GetComponent<Image>();
+        Image trophy2 = GameObject.Find("Trophy2").GetComponent<Image>();
+        Image trophy3 = GameObject.Find("Trophy3").GetComponent<Image>();
+        foreach (Trophy trophy in trophyGetList)
+        {
+            if(index == 1)
+            {
+                if (trophy.color == "blue")
+                {
+                    trophy1.sprite = trophyBlueImg;
+                }
+                else if (trophy.color == "red")
+                {
+                    trophy1.sprite = trophyRedImg;
+                }
+                gameManager.UpdateOwnTrophy(trophy.no, trophy.color);
+            }
+            else if (index == 2)
+            {
+                if (trophy.color == "blue")
+                {
+                    trophy2.sprite = trophyBlueImg;
+                }
+                else if (trophy.color == "red")
+                {
+                    trophy2.sprite = trophyRedImg;
+                }
+                gameManager.UpdateOwnTrophy(trophy.no, trophy.color);
+            }
+            else if (index == 3)
+            {
+                if (trophy.color == "blue")
+                {
+                    trophy3.sprite = trophyBlueImg;
+                }
+                else if (trophy.color == "red")
+                {
+                    trophy3.sprite = trophyRedImg;
+                }
+                gameManager.UpdateOwnTrophy(trophy.no, trophy.color);
+            }
+            index++;
+        }
+
         gameManager.SaveGameData();
         //Debug.Log(JsonUtility.ToJson(gameManager.gameData));
     }

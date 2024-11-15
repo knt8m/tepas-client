@@ -36,7 +36,6 @@ public class SavaDataView : MonoBehaviour
         {
             model = GameObject.Find("/Models/SaveData3").GetComponent<SaveDataModel>();
         }
-        Debug.Log(this);
     }
 
     void Update()

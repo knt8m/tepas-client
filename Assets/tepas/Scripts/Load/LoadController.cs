@@ -2,6 +2,7 @@ using UnityEngine;
 using AnnulusGames.SceneSystem;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class LoadController : MonoBehaviour
 {
@@ -12,13 +13,26 @@ public class LoadController : MonoBehaviour
 
     public SaveDataModel saveData3;
 
+    [SerializeField]
+    public Sprite trophyNoneImg;
+
+    [SerializeField]
+    public Sprite trophyBlueImg;
+
+    [SerializeField]
+    public Sprite trophyRedImg;
+
+    SoundManager soundManager;
+
     public void onBackButton()
     {
+        soundManager.PlaySe("Select_05");
         Scenes.LoadSceneAsync("001_Home");
     }
 
     public void onLoadButton(int dataNo)
     {
+        soundManager.PlaySe("Decision_01");
         GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         gameManager.nowDataNo = dataNo;
         Scenes.LoadSceneAsync("005_StageSelect");
@@ -26,6 +40,7 @@ public class LoadController : MonoBehaviour
 
     void Start()
     {
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         DefaultData();
     }
 
@@ -53,6 +68,27 @@ public class LoadController : MonoBehaviour
         {
             SaveData.SetActive(true);
             NoData.SetActive(false);
+            //トロフィーデータ
+            int trophyIndex = 1;
+            List<OwnTrophy> ownTrophies = gameManager.gameData.ownTrophyData1;
+            Image trophyImg = null;
+            foreach (OwnTrophy ownTrophy in ownTrophies)
+            {
+                trophyImg = GameObject.Find("Data1/SaveData/trophy/" + ownTrophy.trophyNo).GetComponent<Image>();
+                if (ownTrophy.color == "none")
+                {
+                    trophyImg.sprite = trophyNoneImg;
+                }
+                else if (ownTrophy.color == "blue")
+                {
+                    trophyImg.sprite = trophyBlueImg;
+                }
+                else if (ownTrophy.color == "red")
+                {
+                    trophyImg.sprite = trophyRedImg;
+                }
+                trophyIndex++;
+            }
         }
         else
         {
@@ -79,6 +115,27 @@ public class LoadController : MonoBehaviour
         {
             SaveData.SetActive(true);
             NoData.SetActive(false);
+            //トロフィーデータ
+            int trophyIndex = 1;
+            List<OwnTrophy> ownTrophies = gameManager.gameData.ownTrophyData2;
+            Image trophyImg = null;
+            foreach (OwnTrophy ownTrophy in ownTrophies)
+            {
+                trophyImg = GameObject.Find("Data2/SaveData/trophy/" + ownTrophy.trophyNo).GetComponent<Image>();
+                if (ownTrophy.color == "none")
+                {
+                    trophyImg.sprite = trophyNoneImg;
+                }
+                else if (ownTrophy.color == "blue")
+                {
+                    trophyImg.sprite = trophyBlueImg;
+                }
+                else if (ownTrophy.color == "red")
+                {
+                    trophyImg.sprite = trophyRedImg;
+                }
+                trophyIndex++;
+            }
         }
         else
         {
@@ -105,6 +162,27 @@ public class LoadController : MonoBehaviour
         {
             SaveData.SetActive(true);
             NoData.SetActive(false);
+            //トロフィーデータ
+            int trophyIndex = 1;
+            List<OwnTrophy> ownTrophies = gameManager.gameData.ownTrophyData3;
+            Image trophyImg = null;
+            foreach (OwnTrophy ownTrophy in ownTrophies)
+            {
+                trophyImg = GameObject.Find("Data3/SaveData/trophy/" + ownTrophy.trophyNo).GetComponent<Image>();
+                if (ownTrophy.color == "none")
+                {
+                    trophyImg.sprite = trophyNoneImg;
+                }
+                else if (ownTrophy.color == "blue")
+                {
+                    trophyImg.sprite = trophyBlueImg;
+                }
+                else if (ownTrophy.color == "red")
+                {
+                    trophyImg.sprite = trophyRedImg;
+                }
+                trophyIndex++;
+            }
         }
         else
         {
