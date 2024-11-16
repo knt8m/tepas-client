@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Number: 11
   Remain: 1
-  Size: 32
-  X: 10
-  Y: 5
+  Size: 38
+  X: 22
+  Y: 11
   Rows: []

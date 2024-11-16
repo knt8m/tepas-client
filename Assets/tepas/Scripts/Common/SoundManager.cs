@@ -26,7 +26,7 @@ public class SoundManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(this.gameObject);
-            PlayBgm("bgm01");
+            PlayBgm("bgm04");
             LoadBgmVolume();
             LoadBgmMute();
             LoadSeVolume();
@@ -55,6 +55,8 @@ public class SoundManager : MonoBehaviour
 
     public void LoadBgmMute()
     {
+        Debug.Log("gameData: " + gameManager.gameData.bgmMute);
+        Debug.Log("bgmSource: " + bgmSource.mute);
         bgmSource.mute = gameManager.gameData.bgmMute;
     }
 

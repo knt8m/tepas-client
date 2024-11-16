@@ -2,7 +2,6 @@ using UnityEngine;
 using AnnulusGames.SceneSystem;
 using UnityEngine.SceneManagement;
 using System;
-using System.Text.Json;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using System.Linq;
@@ -31,9 +30,11 @@ public class ResultController : MonoBehaviour
     public int score;
 
     public PrescriptionUI prescriptionUi;
+    SoundManager soundManager;
 
     void Start()
     {
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         MissScoreBoard missScoreBoard = missScoreLoader.Load();
         //missScoreBoard.Show();
         TimeScoreBoard timeScoreBoard = timeScoreLoader.Load();
@@ -147,11 +148,30 @@ public class ResultController : MonoBehaviour
 
     public void onRetryButton()
     {
+        soundManager.PlaySe("Decision_06");
         Scenes.LoadSceneAsync("006_Puzzle");
     }
 
     public void onStageButton()
     {
+        soundManager.PlaySe("Select_05");
         Scenes.LoadSceneAsync("005_StageSelect");
+    }
+
+    public void onNextButton()
+    {
+        soundManager.PlaySe("Select_05");
+
+        int nowStageNo = GameObject.Find("GameManager").GetComponent<GameManager>().stageNo;
+        if (nowStageNo <= 0 ||  nowStageNo == 15)
+        {
+            Scenes.LoadSceneAsync("005_StageSelect");
+            return;
+        }
+        else
+        {
+            GameObject.Find("GameManager").GetComponent<GameManager>().stageNo = nowStageNo + 1;
+            Scenes.LoadSceneAsync("006_Puzzle");
+        }
     }
 }

@@ -26,10 +26,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/tepas/Scenes/007_Result.unity
     guid: 5581e53afa0937747b29e55b446acd10
-  - enabled: 1
-    path: Assets/tepas/Scenes/101_PuzzleEditor.unity
-    guid: 9235006b3d2e7bb47b2930aa94d21465
-  - enabled: 1
-    path: Assets/tepas/Scenes/901_Test1.unity
-    guid: e8463ab8fd5a4b841b29afccab29ab47
   m_configObjects: {}

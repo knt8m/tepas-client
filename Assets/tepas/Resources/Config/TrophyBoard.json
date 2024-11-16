@@ -3,19 +3,271 @@
     {
       "no": 1,
       "stage": 1,
-      "borderScore": 500,
+      "borderScore": 0,
       "color": "blue"
     },
     {
       "no": 2,
       "stage": 1,
-      "borderScore": 1000,
+      "borderScore": 1100,
       "color": "blue"
     },
     {
       "no": 3,
       "stage": 1,
-      "borderScore": 1400,
+      "borderScore": 1800,
+      "color": "red"
+    },
+    {
+      "no": 4,
+      "stage": 2,
+      "borderScore": 0,
+      "color": "blue"
+    },
+    {
+      "no": 5,
+      "stage": 2,
+      "borderScore": 1200,
+      "color": "blue"
+    },
+    {
+      "no": 6,
+      "stage": 2,
+      "borderScore": 2300,
+      "color": "red"
+    },
+    {
+      "no": 7,
+      "stage": 3,
+      "borderScore": 0,
+      "color": "blue"
+    },
+    {
+      "no": 8,
+      "stage": 3,
+      "borderScore": 1200,
+      "color": "blue"
+    },
+    {
+      "no": 9,
+      "stage": 3,
+      "borderScore": 2600,
+      "color": "red"
+    },
+    {
+      "no": 10,
+      "stage": 4,
+      "borderScore": 0,
+      "color": "blue"
+    },
+    {
+      "no": 11,
+      "stage": 4,
+      "borderScore": 1500,
+      "color": "blue"
+    },
+    {
+      "no": 12,
+      "stage": 4,
+      "borderScore": 2500,
+      "color": "red"
+    },
+    {
+      "no": 13,
+      "stage": 5,
+      "borderScore": 0,
+      "color": "blue"
+    },
+    {
+      "no": 14,
+      "stage": 5,
+      "borderScore": 1500,
+      "color": "blue"
+    },
+    {
+      "no": 15,
+      "stage": 5,
+      "borderScore": 2600,
+      "color": "red"
+    },
+    {
+      "no": 16,
+      "stage": 6,
+      "borderScore": 0,
+      "color": "blue"
+    },
+    {
+      "no": 17,
+      "stage": 6,
+      "borderScore": 1500,
+      "color": "blue"
+    },
+    {
+      "no": 18,
+      "stage": 6,
+      "borderScore": 3000,
+      "color": "red"
+    },
+    {
+      "no": 19,
+      "stage": 7,
+      "borderScore": 0,
+      "color": "blue"
+    },
+    {
+      "no": 20,
+      "stage": 7,
+      "borderScore": 1500,
+      "color": "blue"
+    },
+    {
+      "no": 21,
+      "stage": 7,
+      "borderScore": 3800,
+      "color": "red"
+    },
+    {
+      "no": 22,
+      "stage": 8,
+      "borderScore": 0,
+      "color": "blue"
+    },
+    {
+      "no": 23,
+      "stage": 8,
+      "borderScore": 1500,
+      "color": "blue"
+    },
+    {
+      "no": 24,
+      "stage": 8,
+      "borderScore": 3800,
+      "color": "red"
+    },
+    {
+      "no": 25,
+      "stage": 9,
+      "borderScore": 0,
+      "color": "blue"
+    },
+    {
+      "no": 26,
+      "stage": 9,
+      "borderScore": 1500,
+      "color": "blue"
+    },
+    {
+      "no": 27,
+      "stage": 9,
+      "borderScore": 4300,
+      "color": "red"
+    },
+    {
+      "no": 28,
+      "stage": 10,
+      "borderScore": 0,
+      "color": "blue"
+    },
+    {
+      "no": 29,
+      "stage": 10,
+      "borderScore": 2600,
+      "color": "blue"
+    },
+    {
+      "no": 30,
+      "stage": 10,
+      "borderScore": 3900,
+      "color": "red"
+    },
+    {
+      "no": 31,
+      "stage": 11,
+      "borderScore": 0,
+      "color": "blue"
+    },
+    {
+      "no": 32,
+      "stage": 11,
+      "borderScore": 4300,
+      "color": "blue"
+    },
+    {
+      "no": 33,
+      "stage": 11,
+      "borderScore": 7300,
+      "color": "red"
+    },
+    {
+      "no": 34,
+      "stage": 12,
+      "borderScore": 0,
+      "color": "blue"
+    },
+    {
+      "no": 35,
+      "stage": 12,
+      "borderScore": 4300,
+      "color": "blue"
+    },
+    {
+      "no": 36,
+      "stage": 12,
+      "borderScore": 6000,
+      "color": "red"
+    },
+    {
+      "no": 37,
+      "stage": 13,
+      "borderScore": 0,
+      "color": "blue"
+    },
+    {
+      "no": 38,
+      "stage": 13,
+      "borderScore": 7000,
+      "color": "blue"
+    },
+    {
+      "no": 39,
+      "stage": 13,
+      "borderScore": 9800,
+      "color": "red"
+    },
+    {
+      "no": 40,
+      "stage": 14,
+      "borderScore": 0,
+      "color": "blue"
+    },
+    {
+      "no": 41,
+      "stage": 14,
+      "borderScore": 9000,
+      "color": "blue"
+    },
+    {
+      "no": 42,
+      "stage": 14,
+      "borderScore": 15000,
+      "color": "red"
+    },
+    {
+      "no": 43,
+      "stage": 14,
+      "borderScore": 0,
+      "color": "blue"
+    },
+    {
+      "no": 44,
+      "stage": 14,
+      "borderScore": 13000,
+      "color": "blue"
+    },
+    {
+      "no": 45,
+      "stage": 14,
+      "borderScore": 16000,
       "color": "red"
     },
     {

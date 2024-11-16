@@ -14,7 +14,502 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Number: 6
   Remain: 1
-  Size: 32
-  X: 10
-  Y: 5
-  Rows: []
+  Size: 44
+  X: 19
+  Y: 9
+  Rows:
+  - Columns:
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+  - Columns:
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+  - Columns:
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+  - Columns:
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+  - Columns:
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+  - Columns:
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+  - Columns:
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+  - Columns:
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+  - Columns:
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0
+    - currentState: 5
+      answerState: 5
+      hintNum: 0

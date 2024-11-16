@@ -21,6 +21,17 @@ public class StageLoader : MonoBehaviour
 
     public string GetFullPath()
     {
+#if UNITY_EDITOR
+        // UnityEditor環境
+        return $"{Application.dataPath}/tepas/Resources/Data/Stage{stageNum}.json";
+#else
+        // ビルド後環境（Resourcesフォルダを使用する場合）
+        return $"Resources/Data/Stage{stageNum}.json";
+#endif
+    }
+
+    public string GetFullPathOld()
+    {
 #if !UNITY_EDITOR
         string basePath = Application.persistentDataPath;
 #else
@@ -48,7 +59,17 @@ public class StageLoader : MonoBehaviour
     {
         bool result = false;
         string fullPath = GetFullPath();
-        string json = System.IO.File.ReadAllText(fullPath);
+        string json = string.Empty;
+#if UNITY_EDITOR
+        json = System.IO.File.ReadAllText(fullPath);
+#else
+        string resourcePath = fullPath.Replace("Resources/", "").Replace(".json", "");
+        TextAsset jsonFile = Resources.Load<TextAsset>(resourcePath);
+        if (jsonFile != null)
+        {
+            json = jsonFile.text;
+        }
+#endif
         try
         {
             stageData = Stage.CreateScriptableObjectFromJSON(json);

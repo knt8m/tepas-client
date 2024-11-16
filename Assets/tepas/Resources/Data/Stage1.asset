@@ -13,17 +13,118 @@ MonoBehaviour:
   m_Name: Stage1
   m_EditorClassIdentifier: 
   Number: 1
-  Remain: 17
-  Size: 50
-  X: 16
-  Y: 8
+  Remain: 15
+  Size: 60
+  X: 13
+  Y: 7
   Rows:
   - Columns:
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+  - Columns:
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
     - currentState: 0
+      answerState: 0
+      hintNum: 0
+    - currentState: 0
+      answerState: 0
+      hintNum: 0
+    - currentState: 0
+      answerState: 0
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+  - Columns:
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
       answerState: 4
       hintNum: 0
     - currentState: 0
+      answerState: 0
+      hintNum: 0
+    - currentState: 0
+      answerState: 0
+      hintNum: 0
+    - currentState: 4
       answerState: 4
+      hintNum: 0
+    - currentState: 0
+      answerState: 0
+      hintNum: 0
+    - currentState: 0
+      answerState: 0
       hintNum: 0
     - currentState: 4
       answerState: 4
@@ -37,8 +138,33 @@ MonoBehaviour:
     - currentState: 4
       answerState: 4
       hintNum: 0
+  - Columns:
     - currentState: 4
       answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 0
+      answerState: 0
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 0
+      answerState: 0
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 0
+      answerState: 0
       hintNum: 0
     - currentState: 4
       answerState: 4
@@ -52,8 +178,33 @@ MonoBehaviour:
     - currentState: 4
       answerState: 4
       hintNum: 0
+  - Columns:
     - currentState: 4
       answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 0
+      answerState: 0
+      hintNum: 0
+    - currentState: 0
+      answerState: 0
+      hintNum: 0
+    - currentState: 4
+      answerState: 4
+      hintNum: 0
+    - currentState: 0
+      answerState: 0
+      hintNum: 0
+    - currentState: 0
+      answerState: 0
       hintNum: 0
     - currentState: 4
       answerState: 4
@@ -86,66 +237,8 @@ MonoBehaviour:
     - currentState: 4
       answerState: 4
       hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-  - Columns:
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
+    - currentState: 0
+      answerState: 0
       hintNum: 0
     - currentState: 4
       answerState: 4
@@ -166,211 +259,6 @@ MonoBehaviour:
       answerState: 4
       hintNum: 0
   - Columns:
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-  - Columns:
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-  - Columns:
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-  - Columns:
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-  - Columns:
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
-    - currentState: 4
-      answerState: 4
-      hintNum: 0
     - currentState: 4
       answerState: 4
       hintNum: 0

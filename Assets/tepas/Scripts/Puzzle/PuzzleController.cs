@@ -21,7 +21,7 @@ public class PuzzleController : MonoBehaviour
     public ScoreModel scoreModel;
     private float time;
     private bool isResultScene = false;
-
+    SoundManager soundManager;
 
     void Start()
     {
@@ -31,6 +31,7 @@ public class PuzzleController : MonoBehaviour
         stage = stageLoader.GetStageData();
         this.scoreModel = GameObject.Find("GameManager").GetComponent<GameManager>().scoreModel;
         scoreModel.Default(stage.Remain, 0);
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
 
     void Update()
@@ -47,7 +48,7 @@ public class PuzzleController : MonoBehaviour
         if (scoreModel.tabletRemain <= 0)
         {
 
-
+            soundManager.PlaySe("Decision_04");
             isResultScene = true;
             Scenes.LoadSceneAsync("007_Result");
         }

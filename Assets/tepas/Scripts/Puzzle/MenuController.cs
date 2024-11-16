@@ -11,6 +11,9 @@ public class MenuController : MonoBehaviour
     public TextMeshProUGUI stageText;
     SoundManager soundManager;
 
+    string descriptionUrl = "http://yasoukyoku.com/files/tepas_manual_jp.pdf";
+
+
     void Start()
     {
         int stageNo = GameObject.Find("GameManager").GetComponent<GameManager>().stageNo;
@@ -32,15 +35,21 @@ public class MenuController : MonoBehaviour
         }
     }
 
-
+    public void OnDescButton()
+    {
+        soundManager.PlaySe("Select_01");
+        Application.OpenURL(descriptionUrl);
+    }
 
     public void OnRetryButton()
     {
+        soundManager.PlaySe("Decision_06");
         Scenes.LoadScene("006_Puzzle");
     }
 
     public void OnStageSelectButton()
     {
+        soundManager.PlaySe("Select_05");
         Scenes.LoadSceneAsync("005_StageSelect");
     }
 }

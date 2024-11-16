@@ -9,6 +9,8 @@ public class HomeController : MonoBehaviour
     public bool firstInit = false;
     SoundManager soundManager;
 
+    string descriptionUrl = "http://yasoukyoku.com/files/tepas_manual_jp.pdf";
+
     void Start()
     {
         soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
@@ -63,6 +65,7 @@ public class HomeController : MonoBehaviour
     public void OnExtraButton()
     {
         soundManager.PlaySe("Select_01");
-        Scenes.LoadSceneAsync("004_Extra");
+        Application.OpenURL(descriptionUrl);
+        //Scenes.LoadSceneAsync("004_Extra");
     }
 }
